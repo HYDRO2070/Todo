@@ -1,0 +1,33 @@
+/* .card{
+    
+    width: 18vw;
+    height: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 2px pink;
+    border-radius: 9px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    image-resolution:inherit;
+    border-radius: 9px;
+}
+.details{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+} */
+ 

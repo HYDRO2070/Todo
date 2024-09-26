@@ -1,0 +1,157 @@
+Outside the function...............................................................
+
+  // const [value,setvalue] = useState(0);
+  // const [shown, setshown] = useState(false)
+  // const a = useRef(0);
+
+  // Type's of useEffect we can use it.
+  // case 1: Run on every render when there is No array pass as the argument in the useeffect.
+  // useEffect(() => {
+  //   alert("Welcome to my page.....")
+  // },)
+  // case 1: Run on only when the page is render in the brower.
+  // useEffect(() => {
+  //   alert("Welcome to my page.....")
+  // }, [])
+  // case 2: Run only on when the value in the array is change every time in the page or anything.
+  // useEffect(() => {
+  //   alert("Welcome to my page.....")
+  // }, [value])
+
+  // useEffect(() => {
+  //   alert("Here there....")
+
+  //   // optinal and know as clean up function
+  //   return () => {
+  //     // it's run when the component in which this useEffect is used is mounted or terminated from the page.
+  //     alert("It is terminated......")
+  //   }
+  // }, [])
+
+  // useEffect(() => {
+  //   ref.current.style.backgroundColor = "red"
+  //   console.log(`Rerendering .... `);
+
+  // })
+  // we can create an refernce variable for an element so we don't have to use the dom to search it we can easaly use ref.current to access it.
+  // const ref = useRef();
+
+  // const [Hales, setHales] = useState([
+  // "This is the first one",
+  //   "This is the first Second",
+  //   "This is the first Third",
+  //   "This is the first Fourth"
+  // ])  
+  // we can create component from the main file also as follow
+  // const Hale = (props)=>{
+  // an component is an type of function which return the jsx file to the the main page.
+  //   return(
+  //     <div className="someting">{props.title}</div>
+  //   )
+  // }
+
+  // const [From, setFrom] = useState({username :"",password :""})
+  // let suppose the objext is empty than we have to check in the input if it have a value or not
+  // const [From, setFrom] = useState({})
+  // const clickfunction = () => {
+  //   alert("Hey I am Click")
+  // }
+  // const handleuser = (e)=>{
+  //   // handling muliple value with a single handler
+  //   setFrom({...From,[e.target.name] : e.target.value})
+  // }
+
+  // const [Cards, setCards] = useState([])
+  // const fetchdata = async()=>{
+  //   let raw = await fetch("https://jsonplaceholder.typicode.com/posts")
+  //   let data  = await raw.json();
+  //   setCards(data)
+  //   console.log(data)
+  // }
+  // useEffect(() => {
+  //   fetchdata()
+  
+  // }, [])
+
+
+Inside the App function..........................................................................................
+<div className="App">
+      <NavBar/>
+      You Can't See Anything Right.....
+      {/* Introduction to Reactjs */}
+      {/* <NavBar codeh = "hello wolrd" />
+      <div className='value'>
+      {value}
+      </div>
+      <button onClick={()=>{setvalue(value+1)}}>Click me</button> */}
+      {/* <img src={logo} alt="" /> */}
+
+
+
+
+      {/* Concept of the component , props and more. */}
+      {/* <NavBar/>
+      <div className="center">
+        <Cards title = "Yahooo" detail = "You can visit our website right now...."/>
+        <Cards title = "Google" detail = "You can visit our website right now...."/>
+        <Cards title = "FaceBook" detail = "You can visit our website right now...."/>
+      </div>
+      <NavBar/> */}
+
+
+
+      {/* Concept of Hooks and State in React JS */}
+      {/* which re usestate,useeffect,useref and more...... */}
+      {/* useEffect hook */}
+      {/* <div className='value'>
+        {value}
+        </div>
+        <button onClick={()=>{setvalue(value+1)}}>Click me</button> */}
+
+
+      {/* useRef hook */}
+      {/* <div className='value'>
+        {value}
+        </div>
+        <button ref = {ref} onClick={()=>{setvalue(value+1)}}>Click me</button> */}
+
+
+
+      {/* Conditonal Rendering & Renderomg List's in React */}
+      {/* for using both true and false statement */}
+      {/* {shown ?<button>This is Conditonal</button> : "Nothing"} */}
+      {/* for only using the true statement */}
+      {/* {shown && <button>This is Conditonal</button>}
+          <button onClick={()=>{
+            setshown(!shown)
+          }}>  click me</button>
+          <Hale/> */}
+      {/* Map is used for traversing in the array for evry value in it. */}
+      {/* {Hales.map(item=>{
+            return <Hale key = {item} title = {item}/> 
+          })} */}
+
+
+      {/* Event handling in React Js */}
+      {/* <button onClick={clickfunction}>Click Me</button> */}
+      {/* <div className="red" onMouseOver={clickfunction}>
+        I am the red
+      </div> */}
+      {/* <input type="text"  name='username' value={From.username ? From.username :""} onChange={handleuser}/>
+      <input type="text" name='password' value={From.password ? From.password :""} onChange={handleuser}/> */}
+
+
+        {/* HomeWork */}
+        {/* <div className="cont">
+      {Cards.map((card)=>{
+        return <div className="card">
+          <h3>{card.title}</h3>
+          <p>{card.body}</p>
+          <h3>By : User: {card.userId}</h3>
+        </div>
+      })}
+      </div> */}
+
+
+
+    </div>
